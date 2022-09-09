@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/*font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+* {
+  margin: 0;
+  display: 0;
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-image: url('images/desktop/image-hero.jpg');
+  height: 37.5em;
+  display: flex;
+  padding: 3.5% 10%;
+  flex-direction: column;
+  gap: 8em;
+}
+
+.creations_img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.img_container {
+  height: 25em;
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5em;
+}
+
+.img_container>span {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.img_container:hover {
+  opacity: 0.6;
+  color: #000;
+}
+
+.deep {
+  background-image: url('images/desktop/image-deep-earth.jpg');
+}
+
+.arcade {
+  background-image: url('images/desktop/image-night-arcade.jpg');
+}
+
+.above {
+  background-image: url('images/desktop/image-from-above.jpg');
+}
+
+.grid {
+  background-image: url('images/desktop/image-grid.jpg');
+}
+
+.borealis {
+  background-image: url('images/desktop/image-pocket-borealis.jpg');
+}
+
+.curiosity {
+  background-image: url('images/desktop/image-curiosity.jpg');
+}
+
+.fisheye {
+  background-image: url('images/desktop/image-fisheye.jpg');
+}
+
+.soccer {
+  background-image: url('images/desktop/image-soccer-team.jpg');
+}
+
+.flex_space_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_space_between>.flex_row {
+  gap: 1em;
+  color: white;
+}
+
+.flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+h1 {
+  border: 3px solid wheat;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 65px;
+  padding: 0.75em;
+  width: 10em;
+}
+
+.flex_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7.5em;
+  position: relative;
+  gap: 5em;
+}
+
+.interactive {
+  background-image: url('images/desktop/image-interactive.jpg');
+  height: 30em;
+  width: 40em;
+}
+
+.interactive_text {
+  z-index: 2;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: #fff;
+  width: 39em;
+  color: hsl(0, 0%, 41%);
+  padding: 5em;
+  font-size: 15px;
+}
+
+.interactive_text>h1 {
+  color: black;
+  border: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+.flex_space_between>h1 {
+  color: black;
+  border: 0;
+  padding: 0;
+  font-size: 45px;
+}
+
+button {
+  text-transform: uppercase;
+  border: 2px solid hsl(0, 0%, 41%);
+  background-color: #fff;
+  color: #000;
+  padding: 0.75em 3em;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+footer {
+  flex: 1;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  padding: 2em 7.5em;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+footer>nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer>nav>.flex_row {
+  color: white;
+  display: flex;
+  gap: 1em;
+}
+
+nav:last-child {
+  color: hsl(0, 0%, 41%);
+}
+
+@media screen and (max-width: 500px) {
+  .flex_row {
+    background-image: url('images/icon-hamburger.svg');
+  }
+  .flex_row > li {
+    opacity: 0;
+  }
+}
